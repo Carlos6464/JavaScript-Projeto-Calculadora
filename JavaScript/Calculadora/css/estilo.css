@@ -1,0 +1,8 @@
+.formatar{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p.formatar{
+    color: green;
+}

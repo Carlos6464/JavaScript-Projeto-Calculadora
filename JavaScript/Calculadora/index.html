@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+
+    <title>Calculadora - javaScript - Bootstrap </title>
+  </head>
+  <body>
+      <div class="container">
+        <h1 class="display-1">Calculadora</h1>
+      </div>
+      <div class="container aling-center">
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-5">
+              <label class="form-label">Primerio numero</label>
+              <input type="number" class="form-control" id="validationCustom01" >
+            </div>
+            <div class="col-md-2">
+              <label for="validationCustom02" class="form-label">Operação</label>
+              
+              <select class="form-select" id="validationCustom02" aria-label="Default select example">
+                <option value="1">Adição</option>
+                <option value="2">subtração</option>
+                <option value="3">multiplicação</option>
+                <option value="4">divisão</option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <label class="form-label">Segundo Numero</label>
+              <div class="input-group has-validation">
+                <input type="number" class="form-control" id="validationCustom03">
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary"  type="submit" onclick="resposta()" >Enviar</button>
+            </div>
+            <div class="col-12">
+                <label for="exampleFormControlInput1" class="form-label formatar">Resultado</label>
+                <p id="resultado" class="formatar"  ></p>
+              </div>
+          </form>
+      </div>
+      
+      
+    
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
